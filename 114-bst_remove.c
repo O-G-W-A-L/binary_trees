@@ -1,9 +1,8 @@
 #include "binary_trees.h"
-  
 bst_t *bst_remove(bst_t *root, int value);
 bst_t *bst_remove_recursive(bst_t *root, bst_t *node, int value);
 bst_t *bst_delete(bst_t *root, bst_t *node);
-bst_t *inorder_successor(bst_t *root);		       
+bst_t *inorder_successor(bst_t *root);
 
 /**
  * bst_remove - removes a node from a Binary Search Tree
@@ -81,7 +80,7 @@ return (bst_delete(root, successor));
 }
 
 /**
- * bst_min_val - finds the smallest node from a Binary Search Tree
+ * inorder_successor - finds the smallest node from a Binary Search Tree
  * @root: a pointer to the root node of the tree
  * Return: a pointer to the smallest node
  */
